@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Todo.js</title>
+    <link rel="stylesheet" href="tdlNEW.css">
+
+  </head>
+  <body>
+    <main id="app">
+        <header>
+            <h1>Todo.js</h1>
+            <div>
+                <label for="sort-select">Сортування:</label>
+                <select id="sort-select">
+                  <option value="alphabetical">За алфавітом (від а до я)</option>
+                  <option value="reverseAlphabetical">За алфавітом (від я до а)</option>
+                  <option value="dateAddedNewest">По даті додавання (від нових до старих)</option>
+                  <option value="dateAddedOldest">По даті додавання (від старих до нових)</option>
+                </select>
+              </div>
+              
+          </header>
+          
+      <ul id="todo-list"></ul>
+      <form id="todo-form">
+        <input id="add-input" type="text">
+        <button id="add-button" type="submit">Додати</button>
+      </form>
+      <div id="pagination-container" class="pagination"></div>
+
+    </main>
+    <script src="tdlNEW.js"></script>
+  </body>
+</html>
