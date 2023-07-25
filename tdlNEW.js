@@ -128,10 +128,10 @@ function editTodoItem() {
 
   if (isEditing) {
     label.textContent = editInput.value;
-    this.textContent = 'Изменить';
+    this.textContent = 'Змінити';
   } else {
     editInput.value = label.textContent;
-    this.textContent = 'Сохранить';
+    this.textContent = 'Зберегти';
   }
 
   todoItem.classList.toggle('editing');
